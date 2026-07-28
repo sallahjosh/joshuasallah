@@ -16,7 +16,6 @@ export default function SkillsPage() {
       <PageHero
         title="My Skills"
         subtitle="Here's what I bring to the table"
-        bg="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section

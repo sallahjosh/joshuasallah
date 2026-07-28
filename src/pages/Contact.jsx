@@ -43,7 +43,6 @@ export default function ContactPage() {
       <PageHero
         title="Get In Touch"
         subtitle="Have a question or want to work together?"
-        bg="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section ref={ref} className="py-24 relative">

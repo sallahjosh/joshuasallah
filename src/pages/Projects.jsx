@@ -12,7 +12,6 @@ export default function ProjectsPage() {
       <PageHero
         title="My Projects"
         subtitle="Showcasing my work and contributions"
-        bg="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section

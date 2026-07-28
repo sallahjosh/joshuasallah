@@ -3,20 +3,21 @@ import { motion } from 'framer-motion';
 /**
  * Shared hero banner for all inner pages (About, Skills, Experience, Projects, Contact).
  */
-export default function PageHero({ title, subtitle, bg }) {
+export default function PageHero({ title, subtitle }) {
   return (
-    <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center overflow-hidden mt-[72px]">
-      {/* Background image */}
-      {bg && (
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${bg}')` }}
-        />
-      )}
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-dark/70" />
+    <section className="relative h-[45vh] min-h-[320px] flex items-center justify-center overflow-hidden mt-[72px]"
+      style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124,58,237,0.22) 0%, transparent 70%), #0a0a0f' }}
+    >
+      {/* Grid overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,0.4) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.4) 1px,transparent 1px)',
+          backgroundSize: '60px 60px',
+        }}
+      />
       {/* Purple-cyan gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-secondary/20" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6">
