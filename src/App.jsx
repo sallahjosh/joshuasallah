@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 
 import Home from './pages/Home';
@@ -20,15 +21,17 @@ export default function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
-            <Route path="/"           element={<Home />} />
-            <Route path="/about"      element={<AboutPage />} />
-            <Route path="/skills"     element={<SkillsPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
-            <Route path="/projects"   element={<ProjectsPage />} />
-            <Route path="/contact"    element={<ContactPage />} />
-            <Route path="*"           element={<Home />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            {/* Catch-all redirect to home */}
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
+        <Footer />
         <BackToTop />
       </div>
     </BrowserRouter>
