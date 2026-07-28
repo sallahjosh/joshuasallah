@@ -15,7 +15,7 @@ export const personal = {
   photo: '/img/josh.jpeg',
   social: {
     github: 'https://github.com/sallahjosh',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/in/sallah-d-joshua',
     twitter: '#',
   },
 };
