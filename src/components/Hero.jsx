@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Star, Code2, Database, Globe, Terminal, Cpu, Server } from 'lucide-react';
+import { ArrowRight, Play, Code2, Database, Globe, Terminal, Cpu, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { personal } from '../data/portfolio';
 
@@ -129,20 +129,6 @@ export default function Hero() {
           {/* ── LEFT COLUMN ── */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-8 pt-4">
 
-            {/* Badge */}
-            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md hover:bg-white/10 transition-colors">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-                </span>
-                <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-zinc-300 flex items-center gap-2">
-                  Available for opportunities
-                  <Star className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />
-                </span>
-              </div>
-            </motion.div>
-
             {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
@@ -253,19 +239,9 @@ export default function Hero() {
               {/* Bottom gradient overlay + name badge */}
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
-                <div className="flex items-end justify-between">
-                  <div>
-                    <p className="text-white font-bold text-base leading-tight">{personal.name}</p>
-                    <p className="text-white/50 text-xs mt-0.5">{personal.tagline}</p>
-                  </div>
-                  {/* Status pill */}
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-2.5 py-1 text-[10px] font-medium tracking-wide text-zinc-300 backdrop-blur-sm">
-                    <span className="relative flex h-1.5 w-1.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
-                    </span>
-                    OPEN TO WORK
-                  </div>
+                <div>
+                  <p className="text-white font-bold text-base leading-tight">{personal.name}</p>
+                  <p className="text-white/50 text-xs mt-0.5">{personal.tagline}</p>
                 </div>
               </div>
             </motion.div>

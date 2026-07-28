@@ -1,10 +1,10 @@
 export const personal = {
   name: 'Sallah D. Joshua',
   initials: 'SDJ',
-  tagline: 'Aspiring Software Developer',
+  tagline: 'Software Developer',
   roles: ['Web Developer', 'Python Enthusiast', 'Problem Solver', 'Tech Lover', 'Lifelong Learner'],
   bio: [
-    "Hello! I'm Sallah D. Joshua, an aspiring software developer with a passion for creating efficient and user-friendly applications. I have a strong foundation in Python and web development technologies, and I'm constantly expanding my skills to stay current with industry trends.",
+    "Hello! I'm Sallah D. Joshua, a software developer with a passion for creating efficient and user-friendly applications. I have a strong foundation in Python and web development technologies, and I'm constantly expanding my skills to stay current with industry trends.",
     "My journey in technology began with a curiosity about how things work, which led me to pursue a degree in Information Systems and Technology. Along the way, I've developed skills in database management, web development, and problem-solving.",
     "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.",
   ],
