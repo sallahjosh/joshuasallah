@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Target, Crown, Star, Code2, Database, Globe, Terminal, Cpu, Server } from 'lucide-react';
+import { ArrowRight, Play, Star, Code2, Database, Globe, Terminal, Cpu, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { personal, skills } from '../data/portfolio';
+import { personal } from '../data/portfolio';
 
 // --- Typing hook (ref-based, no stale closure) ---
 function useTyping(words, elRef) {
@@ -57,13 +57,6 @@ const TECH = [
   { name: 'Java', icon: Cpu },
   { name: 'PHP', icon: Server },
 ];
-
-const StatItem = ({ value, label }) => (
-  <div className="flex flex-col items-center justify-center transition-transform hover:-translate-y-1 cursor-default">
-    <span className="text-xl font-bold text-white sm:text-2xl">{value}</span>
-    <span className="text-[10px] uppercase tracking-wider text-zinc-500 font-medium sm:text-xs">{label}</span>
-  </div>
-);
 
 // Pre-generate particles outside component
 const PARTICLES = Array.from({ length: 18 }, () => ({
@@ -239,61 +232,38 @@ export default function Hero() {
           {/* ── RIGHT COLUMN ── */}
           <div className="lg:col-span-5 space-y-5 lg:mt-10">
 
-            {/* Stats card */}
+            {/* Profile photo card — clean square box */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl"
+              className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl aspect-square w-full max-w-sm mx-auto lg:mx-0"
             >
               {/* Card glow */}
-              <div className="absolute top-0 right-0 -mr-16 -mt-16 h-64 w-64 rounded-full bg-violet-500/10 blur-3xl pointer-events-none" />
+              <div className="absolute top-0 right-0 -mr-16 -mt-16 h-64 w-64 rounded-full bg-violet-500/10 blur-3xl pointer-events-none z-0" />
 
-              <div className="relative z-10">
-                {/* Top stat */}
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20">
-                    <Target className="h-6 w-6 text-white" />
-                  </div>
+              {/* Photo fills the square */}
+              <img
+                src="/img/about.jpeg"
+                alt={personal.name}
+                className="absolute inset-0 w-full h-full object-cover object-center"
+                onError={(e) => { e.target.src = '/img/josh.jpeg'; }}
+              />
+
+              {/* Bottom gradient overlay + name badge */}
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+                <div className="flex items-end justify-between">
                   <div>
-                    <div className="text-3xl font-bold tracking-tight text-white">3+</div>
-                    <div className="text-sm text-zinc-400">Projects Delivered</div>
+                    <p className="text-white font-bold text-base leading-tight">{personal.name}</p>
+                    <p className="text-white/50 text-xs mt-0.5">{personal.tagline}</p>
                   </div>
-                </div>
-
-                {/* Progress bar */}
-                <div className="space-y-3 mb-8">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-zinc-400">Commitment Level</span>
-                    <span className="text-white font-medium">100%</span>
-                  </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-zinc-800/60">
-                    <div className="h-full w-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" />
-                  </div>
-                </div>
-
-                <div className="h-px w-full bg-white/10 mb-6" />
-
-                {/* Mini stats grid */}
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <StatItem value="2+" label="Years" />
-                  <div className="w-px bg-white/10" />
-                  <StatItem value="BSc" label="Degree" />
-                  <div className="w-px bg-white/10" />
-                  <StatItem value="100%" label="Quality" />
-                </div>
-
-                {/* Status pills */}
-                <div className="mt-8 flex flex-wrap gap-2">
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-medium tracking-wide text-zinc-300">
-                    <span className="relative flex h-2 w-2">
+                  {/* Status pill */}
+                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-2.5 py-1 text-[10px] font-medium tracking-wide text-zinc-300 backdrop-blur-sm">
+                    <span className="relative flex h-1.5 w-1.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
                     </span>
-                    AVAILABLE
-                  </div>
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-medium tracking-wide text-zinc-300">
-                    <Crown className="w-3 h-3 text-yellow-400" />
                     OPEN TO WORK
                   </div>
                 </div>

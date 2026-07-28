@@ -12,7 +12,7 @@ export const personal = {
   email: 'is-jdsallah2423@st.umat.edu.gh',
   phone: '+233 25 704 8004',
   location: 'Accra-Pokuase, Ghana',
-  photo: '/img/josh.jpeg',
+  photo: '/img/about.jpeg',
   social: {
     github: 'https://github.com/sallahjosh',
     linkedin: 'https://www.linkedin.com/in/sallah-d-joshua',
@@ -62,6 +62,26 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: 'StudyBuddy AI',
+    description:
+      'Tasked by my department to build an AI-powered study platform designed to help students learn, revise, and prepare for their studies more effectively.',
+    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80',
+    tags: ['AI', 'React', 'Node.js', 'OpenAI'],
+    live: 'https://study-buddy-ai-olive.vercel.app/',
+    github: '#',
+    featured: true,
+  },
+  {
+    title: 'Career-Pilot',
+    description:
+      'Built with colleagues during a hackathon — we placed 2nd. Career-Pilot is a career guidance platform that helps students discover career paths, build CVs, and prepare for job applications.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Node.js', 'AI', 'Hackathon'],
+    live: 'https://careerpilot-rose.vercel.app/auth',
+    github: '#',
+    featured: true,
+  },
   {
     title: 'Inventory Management System',
     description:
