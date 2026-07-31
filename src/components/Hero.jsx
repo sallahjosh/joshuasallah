@@ -154,7 +154,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="max-w-xl text-lg text-zinc-400 leading-relaxed"
             >
-              {personal.tagline} — passionate about crafting efficient,
+              {personal.tagline} passionate about crafting efficient,
               user-friendly applications with clean code and modern technologies.
             </motion.p>
 

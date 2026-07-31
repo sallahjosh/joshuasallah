@@ -71,12 +71,6 @@ export default function Navbar() {
 
           {/* Hire Me CTA */}
           <div className="hidden md:block">
-            <Link
-              to="/contact"
-              className="px-5 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
-            >
-              Hire Me
-            </Link>
           </div>
 
           {/* Hamburger */}
