@@ -5,37 +5,49 @@ import PageHero from '../components/PageHero';
 import {
   SiHtml5, SiPython, SiJavascript, SiPhp,
   SiTailwindcss, SiReact, SiMysql, SiVite,
+  SiDjango, SiFlutter, SiDart, SiNodedotjs,
+  SiMongodb, SiPostgresql, SiFirebase, SiFramer,
 } from 'react-icons/si';
-import { FaCss3Alt, FaJava } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { SiFramer } from 'react-icons/si';
+import { FaCss3Alt, FaJava, FaGithub } from 'react-icons/fa';
+import { Users, MessageSquare, Clock, Zap, Brain } from 'lucide-react';
 
 // Icon map for individual skill items
 const SKILL_ICONS = {
-  'HTML5':            <SiHtml5      className="text-[#e34f26]" />,
-  'Python':           <SiPython     className="text-[#3776ab]" />,
-  'Java':             <FaJava       className="text-[#f89820]" />,
-  'PHP':              <SiPhp        className="text-[#777bb4]" />,
-  'HTML5 & CSS3':     <><SiHtml5 className="text-[#e34f26]" /><FaCss3Alt className="text-[#1572b6] ml-1" /></>,
-  'JavaScript':       <SiJavascript className="text-[#f7df1e]" />,
-  'Responsive Design':<SiTailwindcss className="text-[#06b6d4]" />,
-  'SQL':              <SiMysql      className="text-[#4479a1]" />,
-  'Database Design':  <SiMysql      className="text-[#4479a1]" />,
-  'UI for Databases': <SiMysql      className="text-[#4479a1]" />,
-  'MySQL':            <SiMysql      className="text-[#4479a1]" />,
-  'React':            <SiReact      className="text-[#61dafb]" />,
-  'Vite':             <SiVite       className="text-[#646cff]" />,
+  // Languages
+  'Python':           <SiPython      className="text-[#3776ab]" />,
+  'JavaScript':       <SiJavascript  className="text-[#f7df1e]" />,
+  'Java':             <FaJava        className="text-[#f89820]" />,
+  'PHP':              <SiPhp         className="text-[#777bb4]" />,
+  'Dart':             <SiDart        className="text-[#00b4ab]" />,
+  'HTML5':            <SiHtml5       className="text-[#e34f26]" />,
+  'HTML5 & CSS3':     <SiHtml5       className="text-[#e34f26]" />,
+  // Frameworks
+  'React':            <SiReact       className="text-[#61dafb]" />,
+  'Django':           <SiDjango      className="text-[#092e20]" style={{ filter: 'invert(1) brightness(0.8)' }} />,
+  'Flutter':          <SiFlutter     className="text-[#54c5f8]" />,
+  'Node.js':          <SiNodedotjs   className="text-[#68a063]" />,
   'Tailwind CSS':     <SiTailwindcss className="text-[#06b6d4]" />,
-  'Framer Motion':    <SiFramer     className="text-white" />,
+  // Databases
+  'MySQL':            <SiMysql       className="text-[#4479a1]" />,
+  'SQL':              <SiMysql       className="text-[#4479a1]" />,
+  'MongoDB':          <SiMongodb     className="text-[#47a248]" />,
+  'Firebase':         <SiFirebase    className="text-[#ffca28]" />,
+  'PostgreSQL':       <SiPostgresql  className="text-[#336791]" />,
+  // Soft skills — lucide icons
+  'Teamwork':         <Users         size={14} className="text-violet-400" />,
+  'Communication':    <MessageSquare size={14} className="text-cyan-400" />,
+  'Problem Solving':  <Brain         size={14} className="text-pink-400" />,
+  'Time Management':  <Clock         size={14} className="text-yellow-400" />,
+  'Adaptability':     <Zap           size={14} className="text-green-400" />,
 };
 
 // Built-with tools shown at the bottom
 const BUILT_WITH = [
-  { label: 'React',       icon: <SiReact       className="text-[#61dafb]" /> },
-  { label: 'Vite',        icon: <SiVite        className="text-[#646cff]" /> },
-  { label: 'Tailwind CSS',icon: <SiTailwindcss className="text-[#06b6d4]" /> },
-  { label: 'Framer Motion', icon: <SiFramer    className="text-white/70" /> },
-  { label: 'GitHub',      icon: <FaGithub      className="text-white/70" /> },
+  { label: 'React',         icon: <SiReact       className="text-[#61dafb]" /> },
+  { label: 'Vite',          icon: <SiVite        className="text-[#646cff]" /> },
+  { label: 'Tailwind CSS',  icon: <SiTailwindcss className="text-[#06b6d4]" /> },
+  { label: 'Framer Motion', icon: <SiFramer      className="text-white/70" /> },
+  { label: 'GitHub',        icon: <FaGithub      className="text-white/70" /> },
 ];
 
 const cardVariants = {

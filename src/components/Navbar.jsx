@@ -45,7 +45,7 @@ export default function Navbar() {
       >
         <nav className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-black text-2xl gradient-text tracking-tight">
+          <Link to="/" className="font-black text-xl gradient-text tracking-tight">
             {personal.initials}
           </Link>
 

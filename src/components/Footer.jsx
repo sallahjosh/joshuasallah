@@ -1,25 +1,23 @@
 import { FaCss3Alt } from 'react-icons/fa';
 import {
-  SiReact,
-  SiVite,
-  SiTailwindcss,
-  SiJavascript,
-  SiPython,
-  SiMysql,
-  SiPhp,
-  SiHtml5,
+  SiReact, SiVite, SiTailwindcss, SiJavascript,
+  SiPython, SiMysql, SiPhp, SiHtml5,
+  SiDjango, SiFlutter, SiMongodb, SiNodedotjs,
 } from 'react-icons/si';
 import LogoLoop from './LogoLoop';
 
-// Tech stack logos for the scrolling strip
 const TECH_LOGOS = [
   { node: <SiHtml5       style={{ color: '#e34f26' }} />, title: 'HTML5' },
   { node: <FaCss3Alt     style={{ color: '#1572b6' }} />, title: 'CSS3' },
   { node: <SiJavascript  style={{ color: '#f7df1e' }} />, title: 'JavaScript' },
   { node: <SiPython      style={{ color: '#3776ab' }} />, title: 'Python' },
-  { node: <SiMysql       style={{ color: '#4479a1' }} />, title: 'MySQL' },
-  { node: <SiPhp         style={{ color: '#777bb4' }} />, title: 'PHP' },
   { node: <SiReact       style={{ color: '#61dafb' }} />, title: 'React' },
+  { node: <SiDjango      style={{ color: '#44b78b' }} />, title: 'Django' },
+  { node: <SiFlutter     style={{ color: '#54c5f8' }} />, title: 'Flutter' },
+  { node: <SiNodedotjs   style={{ color: '#68a063' }} />, title: 'Node.js' },
+  { node: <SiMysql       style={{ color: '#4479a1' }} />, title: 'MySQL' },
+  { node: <SiMongodb     style={{ color: '#47a248' }} />, title: 'MongoDB' },
+  { node: <SiPhp         style={{ color: '#777bb4' }} />, title: 'PHP' },
   { node: <SiVite        style={{ color: '#646cff' }} />, title: 'Vite' },
   { node: <SiTailwindcss style={{ color: '#06b6d4' }} />, title: 'Tailwind CSS' },
 ];

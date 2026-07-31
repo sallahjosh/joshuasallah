@@ -1,14 +1,14 @@
 export const personal = {
   name: 'Sallah D. Joshua',
-  initials: 'SDJ',
+  initials: 'Dev Sallah',
   tagline: 'Software Developer',
   roles: ['Web Developer', 'Python Enthusiast', 'Problem Solver', 'Tech Lover', 'Lifelong Learner'],
   bio: [
-    "Hello! I'm Sallah D. Joshua, a software developer with a passion for creating efficient and user-friendly applications. I have a strong foundation in Python and web development technologies, and I'm constantly expanding my skills to stay current with industry trends.",
-    "My journey in technology began with a curiosity about how things work, which led me to pursue a degree in Information Systems and Technology. Along the way, I've developed skills in database management, web development, and problem-solving.",
-    "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.",
+    "Hello! I'm Sallah D. Joshua — a software developer from Ghana with a passion for building efficient, user-friendly digital products. I work with modern frameworks like React and Django, and I enjoy crafting solutions that are both functional and beautifully designed.",
+    "I'm currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology. My experience spans full-stack web development, database management, IoT systems, and AI-powered applications — including projects built for my department and hackathon competitions.",
+    "I speak English, Twi, and Ewe fluently. Outside of code, I enjoy collaborating with people, exploring emerging technologies, and sharing what I learn with my community.",
   ],
-  chips: ['Python', 'HTML', 'CSS', 'Java', 'MySQL'],
+  chips: ['Python', 'React', 'Django', 'Flutter', 'MySQL'],
   email: 'is-jdsallah2423@st.umat.edu.gh',
   phone: '+233 25 704 8004',
   location: 'Accra-Pokuase, Ghana',
@@ -24,22 +24,22 @@ export const skills = [
   {
     category: 'Programming Languages',
     icon: '{ }',
-    items: ['HTML5', 'Python', 'Java', 'PHP'],
+    items: ['Python', 'JavaScript', 'Java', 'PHP', 'Dart'],
   },
   {
-    category: 'Web Technologies',
+    category: 'Frameworks & Libraries',
     icon: '</>',
-    items: ['HTML5 & CSS3', 'JavaScript', 'Responsive Design'],
+    items: ['React', 'Django', 'Flutter', 'Node.js', 'Tailwind CSS'],
   },
   {
-    category: 'Database',
+    category: 'Databases',
     icon: '🗄',
-    items: ['SQL', 'Database Design', 'UI for Databases', 'MySQL'],
+    items: ['MySQL', 'SQL', 'MongoDB', 'Firebase', 'PostgreSQL'],
   },
   {
-    category: 'Spoken Languages',
-    icon: '💬',
-    items: ['English', 'Twi', 'Ewe'],
+    category: 'Soft Skills',
+    icon: '🤝',
+    items: ['Teamwork', 'Communication', 'Problem Solving', 'Time Management', 'Adaptability'],
   },
 ];
 
