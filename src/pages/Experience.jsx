@@ -3,12 +3,13 @@ import { useInView } from '../hooks/useInView';
 import { experience } from '../data/portfolio';
 import { GraduationCap, Briefcase, Calendar, Trophy } from 'lucide-react';
 import PageHero from '../components/PageHero';
+import HoverExpand_001 from '../components/ui/expand-on-hover';
 
 const HACK_IMAGES = [
-  { src: '/img/hack.jpeg',  alt: 'Hackathon team photo' },
-  { src: '/img/hack1.jpeg', alt: 'Hackathon presentation' },
-  { src: '/img/hack2.jpeg', alt: 'Hackathon working session' },
-  { src: '/img/hack3.jpeg', alt: 'Hackathon award ceremony' },
+  { src: '/img/hack.jpeg',  alt: 'Hackathon team' },
+  { src: '/img/hack1.jpeg', alt: 'Presentation' },
+  { src: '/img/hack2.jpeg', alt: 'Working session' },
+  { src: '/img/hack3.jpeg', alt: 'Award ceremony' },
 ];
 
 export default function ExperiencePage() {
@@ -110,26 +111,14 @@ export default function ExperiencePage() {
             </div>
           </motion.div>
 
-          {/* Photo grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {HACK_IMAGES.map((img, i) => (
-              <motion.div
-                key={img.src}
-                initial={{ opacity: 0, y: 20 }}
-                animate={hackInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.45, delay: 0.1 + i * 0.08 }}
-                className="group relative overflow-hidden rounded-xl border border-white/[0.07] aspect-square"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              </motion.div>
-            ))}
-          </div>
+          {/* HoverExpand photo strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={hackInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <HoverExpand_001 images={HACK_IMAGES} />
+          </motion.div>
 
         </div>
       </section>
