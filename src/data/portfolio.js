@@ -4,14 +4,14 @@ export const personal = {
   tagline: 'Software Developer',
   roles: ['Web Developer', 'Python Enthusiast', 'Problem Solver', 'Tech Lover', 'Lifelong Learner'],
   bio: [
-    "Hello! I'm Sallah D. Joshua — a software developer from Ghana with a passion for building efficient, user-friendly digital products. I work with modern frameworks like React and Django, and I enjoy crafting solutions that are both functional and beautifully designed.",
-    "I'm currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology. My experience spans full-stack web development, database management, IoT systems, and AI-powered applications — including projects built for my department and hackathon competitions.",
+    "Hello! I'm Sallah D. Joshua a software developer with a passion for building efficient, user-friendly digital products. I work with modern frameworks like React and Django, and I enjoy crafting solutions that are both functional and beautifully designed.",
+    "I'm currently pursuing a BSc in Information Systems and Technology at the University of Mines and Technology. My experience spans full-stack web development, database management, IoT systems, and AI-powered applications  including projects built for my department and hackathon competitions.",
     "I speak English, Twi, and Ewe fluently. Outside of code, I enjoy collaborating with people, exploring emerging technologies, and sharing what I learn with my community.",
   ],
   chips: ['Python', 'React', 'Django', 'Flutter', 'MySQL'],
   email: 'is-jdsallah2423@st.umat.edu.gh',
   phone: '+233 25 704 8004',
-  location: 'Accra-Pokuase, Ghana',
+  location: 'Accra, Ghana',
   photo: '/img/about.jpeg',
   social: {
     github: 'https://github.com/sallahjosh',
